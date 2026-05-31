@@ -13,7 +13,6 @@ $success = '';
 if (isset($_GET['id'])) {
     $item_id = (int)$_GET['id'];
     
-    // Get item details and verify it belongs to the logged-in user
     $stmt = $conn->prepare("SELECT * FROM lost_items WHERE id = ? AND user_id = ?");
     $stmt->bind_param("ii", $item_id, $_SESSION['user_id']);
     $stmt->execute();
