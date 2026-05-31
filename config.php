@@ -5,7 +5,6 @@ $username = "root";
 $password = "";
 $dbname = "lost_found_db";
 
-// Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection
