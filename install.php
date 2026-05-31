@@ -1,7 +1,6 @@
 <?php
 echo "<h2>🚀 Lost & Found Application Installation</h2>";
 
-// Check if XAMPP is running
 $mysql_connection = @mysqli_connect("localhost", "root", "");
 if (!$mysql_connection) {
     echo "<div style='color: red; padding: 10px; border: 1px solid red; margin: 10px;'>";
