@@ -27,7 +27,6 @@ if (!empty($search_query)) {
     $types .= "sss";
 }
 
-// Get total count
 $count_sql = str_replace("SELECT *", "SELECT COUNT(*)", $sql);
 $stmt = $conn->prepare($count_sql);
 if (!empty($params)) {
