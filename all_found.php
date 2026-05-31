@@ -1,5 +1,5 @@
 <?php
-include 'config.php';  
+include 'config.php';   
 
 $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
 $per_page = 12;
