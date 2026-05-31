@@ -6,7 +6,6 @@ $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
 $per_page = 12;
 $offset = ($page - 1) * $per_page;
 
-// Filters
 $category_filter = isset($_GET['category']) ? $_GET['category'] : '';
 $search_query = isset($_GET['search']) ? trim($_GET['search']) : '';
 
