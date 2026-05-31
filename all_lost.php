@@ -36,7 +36,6 @@ $stmt->execute();
 $total_items = $stmt->get_result()->fetch_row()[0];
 $total_pages = ceil($total_items / $per_page);
 
-// Get items
 $sql .= " ORDER BY date_reported DESC LIMIT ? OFFSET ?";
 $params[] = $per_page;
 $params[] = $offset;
