@@ -9,7 +9,6 @@ $offset = ($page - 1) * $per_page;
 $category_filter = isset($_GET['category']) ? $_GET['category'] : '';
 $search_query = isset($_GET['search']) ? trim($_GET['search']) : '';
 
-// Build query
 $sql = "SELECT * FROM lost_items WHERE 1=1";
 $params = [];
 $types = "";
