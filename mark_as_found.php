@@ -10,8 +10,6 @@ if (!isset($_SESSION['user_id'])) {
 
 $error = '';
 $success = '';
-
-// Get lost item details
 if (isset($_GET['id'])) {
     $item_id = (int)$_GET['id'];
     
