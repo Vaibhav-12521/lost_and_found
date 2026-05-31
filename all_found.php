@@ -1,7 +1,6 @@
 <?php
 include 'config.php';
 
-// Pagination
 $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
 $per_page = 12;
 $offset = ($page - 1) * $per_page;
