@@ -1,5 +1,5 @@
 <?php
-echo "<h2>🚀 Lost & Found Application Installation</h2>"; 
+echo "<h2>🚀 Lost & Found Application Installation</h2>";  
 
 $mysql_connection = @mysqli_connect("localhost", "root", ""); 
 if (!$mysql_connection) {
