@@ -1,7 +1,7 @@
 <?php
 echo "<h2>🚀 Lost & Found Application Installation</h2>";
 
-$mysql_connection = @mysqli_connect("localhost", "root", "");
+$mysql_connection = @mysqli_connect("localhost", "root", ""); 
 if (!$mysql_connection) {
     echo "<div style='color: red; padding: 10px; border: 1px solid red; margin: 10px;'>";
     echo "❌ Error: MySQL connection failed!<br>";
