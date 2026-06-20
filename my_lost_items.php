@@ -194,7 +194,7 @@ while ($row = $result->fetch_assoc()) {
                             </div>
                         <?php endforeach; ?>
                     </div>
-                <?php endif; ?>
+                <?php endif; ?> 
             </div>
         </div>
     </div>
