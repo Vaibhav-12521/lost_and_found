@@ -7,7 +7,6 @@ if (!isset($_SESSION['user_id'])) {
     exit();
 }
 
-// Get user's lost items
 $stmt = $conn->prepare("SELECT * FROM lost_items WHERE user_id = ? ORDER BY date_reported DESC");
 $stmt->bind_param("i", $_SESSION['user_id']);
 $stmt->execute();
