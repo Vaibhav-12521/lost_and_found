@@ -10,7 +10,6 @@ if (!isset($_SESSION['user_id'])) {
 $error = '';
 $success = '';
 
-// Get user data
 $stmt = $conn->prepare("SELECT * FROM users WHERE id = ?");
 $stmt->bind_param("i", $_SESSION['user_id']);
 $stmt->execute();
